@@ -1,0 +1,44 @@
+# Provide operations on fractions
+import Fraction from fractions as frac
+
+def getNumbers():
+  first_number = input("First number: ")
+  numbers = [frac(first_number)]
+  while(True):
+    next_number = input("Next number: ")
+    if(next_number == ""):
+      break
+    else:
+      numbers.append(frac(next_number))
+  return numbers
+  
+def add(numbers):
+  for num in numbers:
+    total += num
+  print(num)
+  
+def subtract(numbers):
+  break
+  
+def multiply(numbers):
+  break
+  
+def divide(numbers):
+  break
+  
+def fractions():
+  operation = input("What type of operation do you wish to preform: ")
+  numbers = getNumbers()
+  while(True):
+    if(operation.upper() == "ADD"):
+      add(numbers)
+    elif(operation.upper() == "SUBTRACT"):
+      subtract(numbers)
+    elif(operation.upper() == "MULTIPLY"):
+      multiply(numbers)
+    elif(operation.upper() == "DIVIDE"):
+      divide(numbers)
+    else:
+      print("Invalid choice")
+      continue
+    break
