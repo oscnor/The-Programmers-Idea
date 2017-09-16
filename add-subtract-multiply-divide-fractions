@@ -1,15 +1,14 @@
 # Provide operations on fractions
-import Fraction from fractions as frac
 
 def getNumbers():
   first_number = input("First number: ")
-  numbers = [frac(first_number)]
+  numbers = [first_number]
   while(True):
     next_number = input("Next number: ")
     if(next_number == ""):
       break
     else:
-      numbers.append(frac(next_number))
+      numbers.append(next_number)
   return numbers
   
 def add(numbers):
@@ -18,18 +17,19 @@ def add(numbers):
   print(num)
   
 def subtract(numbers):
-  break
+    numer = number
   
 def multiply(numbers):
-  break
-  
+    numer = number
+    
 def divide(numbers):
-  break
-  
+    numer = number
+    
 def fractions():
   operation = input("What type of operation do you wish to preform: ")
   numbers = getNumbers()
   while(True):
+    operation = input("What type of operation do you wish to preform: ")
     if(operation.upper() == "ADD"):
       add(numbers)
     elif(operation.upper() == "SUBTRACT"):
@@ -42,3 +42,5 @@ def fractions():
       print("Invalid choice")
       continue
     break
+
+fractions()
