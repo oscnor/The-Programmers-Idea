@@ -1,7 +1,7 @@
 # The-Programmers-Idea
-Solutions from problems in The programmers idea book
+##### Solutions from problems in The programmers idea book
 
- - Numbers
+## Numbers
 
 Add/Subtract/Multiply/Divide Fractions 
 Alarm Clock 
@@ -27,7 +27,7 @@ Unit Converter (Temp, Currency, Volume, Mass and More)
 
 
 
- - Text
+## Text
 
 CD Key Generator
 Check if Palindrome
@@ -53,7 +53,7 @@ Vigenere / Vernam / Caesar Ciphers
 Write Out Number
 
 
- - Networking
+## Networking
 
 Chat Application (IRC or MSN Style)
 Country from IP Lookup
@@ -78,7 +78,7 @@ Whois Search Tool
 Zip / Postal Code Lookup
 
 
- - Classes
+## Classes
 
 Airline / Hotel Reservation System
 Bank Account Manager 
@@ -111,7 +111,7 @@ News Aggregator
 XML sitemap generator
 
 
- - Web
+## Web
 
 49Bandwidth Monitor
 Bookmark Collector and Sorter
@@ -136,7 +136,7 @@ Web Browser with Tabs
 WYSIWG (What you see is what you get) Editor 
 
 
- - Files
+## Files
 
 Add Transactions In File and Find Averages 
 Barcode reader and generator 
@@ -167,7 +167,7 @@ Versioning Manager
 Web document viewer 
 
 
- - Databases
+## Databases
 
 Address Book 
 Baseball / Other Card Collector 
@@ -189,7 +189,7 @@ Travel Planner System
 Web Board (Forum) 
 
 
- - Graphics and Multimedia
+## Graphics and Multimedia
 
 Bulk Picture Manipulator 
 CD Burning App 
@@ -210,7 +210,7 @@ Watermarking Application
 YouTube Downloader 
 
 
- - Games
+## Games
 
 2D RPG 
 Battleship 
