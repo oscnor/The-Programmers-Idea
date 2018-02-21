@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="Chess" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/Chess" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+					<Add directory="include" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/Chess" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+					<Add directory="include" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="-std=c++14" />
+			<Add directory="D:/Program Files (x86)/CodeBlocks/sfml/include" />
+		</Compiler>
+		<Linker>
+			<Add library="sfml-graphics" />
+			<Add library="sfml-window" />
+			<Add library="sfml-system" />
+			<Add directory="D:/Program Files (x86)/CodeBlocks/sfml/lib" />
+		</Linker>
+		<Unit filename="include/bishop.h" />
+		<Unit filename="include/game.h" />
+		<Unit filename="include/king.h" />
+		<Unit filename="include/knight.h" />
+		<Unit filename="include/pawn.h" />
+		<Unit filename="include/piece.h" />
+		<Unit filename="include/pieceimg.h" />
+		<Unit filename="include/queen.h" />
+		<Unit filename="include/rook.h" />
+		<Unit filename="main.cpp" />
+		<Unit filename="src/bishop.cpp" />
+		<Unit filename="src/game.cpp" />
+		<Unit filename="src/king.cpp" />
+		<Unit filename="src/knight.cpp" />
+		<Unit filename="src/pawn.cpp" />
+		<Unit filename="src/piece.cpp" />
+		<Unit filename="src/pieceimg.cpp" />
+		<Unit filename="src/queen.cpp" />
+		<Unit filename="src/rook.cpp" />
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
