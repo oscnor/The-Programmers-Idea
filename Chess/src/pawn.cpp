@@ -49,6 +49,12 @@ bool Pawn::isLegal(sf::Vector2f newPosition, std::vector<Piece*> currentPlayer, 
             {
                 return false;
             }
+            if((opponent[i]->getPosition().x == position.x) &&
+               ((opponent[i]->getPosition().y == newPosition.y) ||
+                (opponent[i]->getPosition().y == newPosition.y)))
+            {
+                return false;
+            }
         }
         startingPos = 9;
         return true;
@@ -64,6 +70,7 @@ bool Pawn::isLegal(sf::Vector2f newPosition, std::vector<Piece*> currentPlayer, 
             {
                 // Take opponent
                 opponent[i]->changeToTaken();
+                opponent[i]->setPosition(sf::Vector2f(8,8));
                 pieceImg->setNewPosition(i, sf::Vector2f(8,8), !isWhite, true);
                 return true;
             }

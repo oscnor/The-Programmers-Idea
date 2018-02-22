@@ -21,28 +21,25 @@ bool Knight::isLegal(sf::Vector2f newPosition, std::vector<Piece*> currentPlayer
     {
         return false;
     }
+
     if(((position.x + 2 == newPosition.x) && ((position.y + 1 == newPosition.y) || (position.y - 1 == newPosition.y))) ||
        ((position.x - 2 == newPosition.x) && ((position.y + 1 == newPosition.y) || (position.y - 1 == newPosition.y))) ||
        ((position.x + 1 == newPosition.x) && ((position.y + 2 == newPosition.y) || (position.y - 2 == newPosition.y))) ||
        ((position.x - 1 == newPosition.x) && ((position.y + 2 == newPosition.y) || (position.y - 2 == newPosition.y))))
     {
+        // Is a team piece in new position
         for(unsigned int i = 0; i < opponent.size(); ++i)
         {
             if(currentPlayer[i]->getPosition() == newPosition)
             {
                 return false;
             }
+            // Is opponent in new position then take
             else if(opponent[i]->getPosition() == newPosition)
             {
                 opponent[i]->changeToTaken();
-                if(whiteTurnToMove)
-                {
-                    pieceImg->setNewPosition(i+16, sf::Vector2f(8,8), isWhite, true);
-                }
-                else if(!whiteTurnToMove)
-                {
-                    pieceImg->setNewPosition(i, sf::Vector2f(8,8), isWhite, true);
-                }
+                opponent[i]->setPosition(sf::Vector2f(8,8));
+                pieceImg->setNewPosition(i, sf::Vector2f(8,8), !isWhite, true);
             }
         }
         return true;

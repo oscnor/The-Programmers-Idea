@@ -59,14 +59,8 @@ bool Bishop::isLegal(sf::Vector2f newPosition, std::vector<Piece*> currentPlayer
         if(willBeTaken)
         {
             opponent[indexOfTaken]->changeToTaken();
-            if(whiteTurnToMove)
-            {
-                pieceImg->setNewPosition(indexOfTaken+16, sf::Vector2f(8,8), isWhite, willBeTaken);
-            }
-            else if(!whiteTurnToMove)
-            {
-                pieceImg->setNewPosition(indexOfTaken, sf::Vector2f(8,8), isWhite, willBeTaken);
-            }
+            opponent[indexOfTaken]->setPosition(sf::Vector2f(8,8));
+            pieceImg->setNewPosition(indexOfTaken, sf::Vector2f(8,8), !isWhite, willBeTaken);
         }
         return true;
     }

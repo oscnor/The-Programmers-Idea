@@ -33,10 +33,8 @@ bool King::isLegal(sf::Vector2f newPosition, std::vector<Piece*> currentPlayer, 
                 if(opponent[i]->getPosition() == newPosition)
                 {
                     opponent[i]->changeToTaken();
-                    if(whiteTurnToMove)
-                        pieceImg->setNewPosition(i+16, sf::Vector2f(8,8), isWhite, true);
-                    else if(!whiteTurnToMove)
-                        pieceImg->setNewPosition(i, sf::Vector2f(8,8), isWhite, true);
+                    opponent[i]->setPosition(sf::Vector2f(8,8));
+                    pieceImg->setNewPosition(i, sf::Vector2f(8,8), !isWhite, true);
                 }
                 else if(currentPlayer[i]->getPosition() == newPosition)
                 {
