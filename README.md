@@ -216,7 +216,7 @@
 - [ ] Battleship 
 - [ ] Black Jack 
 - [ ] Breakout 
-- [ ] Chess and Checkers 
+- [x] Chess and Checkers 
 - [ ] Connect four 
 - [ ] Craps 
 - [ ] Crossword Puzzle 
