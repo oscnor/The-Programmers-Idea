@@ -62,19 +62,9 @@ bool Pawn::isLegal(sf::Vector2f newPosition, std::vector<Piece*> currentPlayer, 
             ((newPosition.x == position.x+1 || newPosition.x == position.x-1)
              && newPosition.y == position.y+(1*colorMult)))
             {
-                /** Only black pawns are getting taken????*/
                 // Take opponent
                 opponent[i]->changeToTaken();
-                pieceImg->setNewPosition(i, sf::Vector2f(8,8), !isWhite, true);/*
-                if(whiteTurnToMove)
-                {
-                    pieceImg->setNewPosition(i, sf::Vector2f(8,8), isWhite, true);
-                }
-                else if(!whiteTurnToMove)
-                {
-                    pieceImg->setNewPosition(i, sf::Vector2f(8,8), isWhite, true);
-                }*/
-                std::cout << "i=" << i <<  std::endl;
+                pieceImg->setNewPosition(i, sf::Vector2f(8,8), !isWhite, true);
                 return true;
             }
         }
